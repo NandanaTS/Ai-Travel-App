@@ -1,0 +1,207 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #ffffff; /* Change background to white */
+}
+
+.header {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-name {
+    font-size: 30px;
+    color: black; /* Pure black color */
+    font-weight: bold; /* Bold font */
+    margin-left: 60px; 
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 60px; /* Adjust this to move the buttons to the left */
+}
+
+.auth-button {
+    background-color: #080b08;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #0c0e0c;
+}
+
+/* Banner Image */
+.banner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.banner-image {
+    width: 90%; /* Increased the width */
+    max-width: 1500px; /* Optional: limit max width */
+    height: 400px; /* Adjusted height */
+    background-image:url('https://wallpaperswide.com/download/free_beautiful_landscape_desktop-wallpaper-2560x800.jpg');
+    background-size: cover; 
+    background-position: center;
+    object-fit:fill;
+    background-repeat: no-repeat;
+    display:block;
+    
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner-content {
+    position: absolute;
+    top: 50%; /* Reduced the height space */
+    left: 33%;
+    font-family: 'Poppins', Arial, sans-serif;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.banner-text-small {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', Arial, sans-serif; 
+    margin-top: 5px; /* Adjust this to control spacing */
+    margin-bottom: 5px; /* Adjust this to control spacing */
+}
+
+.banner-text-large {
+    color: white;
+    font-size: 90px; /* Increased font size */
+    font-family: 'Poppins', Arial, sans-serif;  /* Change font to Poppins */
+    margin-top: 0; /* Reduce space at the top */
+    margin-bottom: 10px; /* Reduce space at the bottom */
+}
+
+.banner-arrow {
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.banner-arrow:hover {
+    transform: scale(1.25);
+}
+
+/* Search Box on Banner */
+.banner-search-box {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    width: 900px;
+}
+
+.banner-search-box input,
+.banner-search-box select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.banner-search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #080b08;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.banner-search-box button:hover {
+    background-color: #0c0e0c;
+}
+
+.banner-search-box button i {
+    margin-left: 5px;
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Common card styles */
+.location-card, .other-location-card, .suggested-location-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.location-card:hover, .other-location-card:hover, .suggested-location-card:hover {
+    transform: scale(1.03);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}

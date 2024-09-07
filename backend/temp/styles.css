@@ -1,0 +1,104 @@
+/* Common card styles */
+.location-card, .other-location-card {
+    padding: 10px 20px 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(238, 238, 238);
+    /* Add any additional styling you want for the cards */
+}
+
+/* Initial card container */
+#location-container, #other-location-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in width */
+    gap: 20px; /* Adjust the space between cards */
+    overflow-y: auto; /* Enable vertical scrolling if cards overflow */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.search-container {
+    padding-top: 20px;
+    text-align: center; /* Align the search box to the center */
+}
+
+#searchInput {
+    padding: 17px;
+    border-radius: 20px; /* Add rounded corners */
+    border: 1px solid #c1c1c1;
+    width: 600px; /* Adjust width as needed */
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.Subtitle1 {
+    font-size: 25px;
+    padding-left: 55px;
+    padding-top: 40px;
+}
+
+.Subtitle {
+    font-size: 25px;
+    padding-left: 55px;
+    padding-top: 40px;
+}
+
+/* Button styling */
+.already-visited{
+    background-color: rgb(255, 255, 255); /* Blue background */
+    border: none; /* Remove borders */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 10px 14px; /* Some padding */
+    font-size: 14px; /* Set a font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1px;
+    cursor: pointer; 
+}
+
+.like, .add{
+    background-color: rgb(255, 255, 255); /* Blue background */
+    border: none; /* Remove borders */
+    color: rgb(214, 42, 42); /* White text */
+    padding: 10px 12px; /* Some padding */
+    font-size: 14px; /* Set a font size */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+    cursor: pointer; 
+}
+
+
+.like:hover, .add:hover {
+    background-color: #2b2b2b;
+    color: rgb(234, 77, 77); 
+}
+
+.already-visited:hover{
+    background-color: #2b2b2b;
+    color: rgb(255, 255, 255); 
+}
+
+.liked {
+    background-color: rgb(215, 59, 54); /* Change to the desired color */
+    color: white;
+}
+
+.added {
+    background-color: rgb(215, 59, 54); /* Change to the desired color */
+    color: white;
+}
+
+.visited{
+    background-color: rgb(215, 59, 54); /* Change to the desired color */
+    color: white;
+}

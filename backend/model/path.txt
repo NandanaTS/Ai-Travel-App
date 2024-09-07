@@ -1,0 +1,4 @@
+ # File paths
+    places_file = 'C:/Users/melvi/Desktop/Travel App/Travel-App/backend/Datasets/places_to_visit_kerala.json'
+    user_data_file = 'C:/Users/melvi/Desktop/Travel App/Travel-App/backend/userData/userData.json'
+    output_folder = 'rbm_results'

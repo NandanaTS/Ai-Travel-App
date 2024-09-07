@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="app-name">Travel App</div>
+            <div class="auth-buttons">
+                <button class="auth-button">Sign Up</button>
+                <button class="auth-button">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-container">
+        <div class="banner-image"></div>
+        <div class="banner-content">
+            <p class="banner-text-small">AI Integrated Travel Recommendations</p>
+            <p class="banner-text-large">Adventure</p>
+            <p class="banner-text-small">Let AI be your compass as you conquer</p>
+            <p class="banner-text-small">challenges, explore new horizons and earn</p>
+            <p class="banner-text-small">exciting rewards!</p>
+        </div>
+        <div class="banner-search-box">
+            <input type="text" placeholder="Search your location">
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <h2 class="Subtitle0">Recommended Places<span id="SuggestedCity"></span></h2>
+    
+    <div id="suggested-location-container" class="card-container">
+        <div class="location-card">
+            <div class="card-image" style="background-image: url('https://example.com/image1.jpg');"></div>
+            <div class="card-title">Place Name</div>
+        </div>
+    </div>
+
+    <h2 class="Subtitle1">Explore Nearby Places in <span id="City"></span></h2>
+
+    <div id="location-container" class="card-container">
+        <div class="location-card">
+            <div class="card-image" style="background-image: url('https://example.com/image2.jpg');"></div>
+            <div class="card-title">Place Name</div>
+        </div>
+    </div>
+
+    <h2 class="Subtitle">Explore Other Places <span id="OtherCity"></span></h2>
+
+    <div id="other-location-container" class="card-container">
+        <div class="location-card">
+            <div class="card-image" style="background-image: url('https://example.com/image3.jpg');"></div>
+            <div class="card-title">Place Name</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
